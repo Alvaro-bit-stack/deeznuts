@@ -97,7 +97,6 @@
       <a name="fanout" val="4"/>
       <a name="incoming" val="8"/>
     </comp>
-    <comp lib="0" loc="(2430,960)" name="Constant"/>
     <comp lib="0" loc="(2860,1050)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
@@ -192,9 +191,6 @@
     <comp lib="4" loc="(110,1020)" name="RAM">
       <a name="appearance" val="logisim_evolution"/>
       <a name="enables" val="line"/>
-    </comp>
-    <comp lib="4" loc="(2430,910)" name="Register">
-      <a name="appearance" val="logisim_evolution"/>
     </comp>
     <comp lib="4" loc="(2500,1000)" name="RAM">
       <a name="appearance" val="logisim_evolution"/>
@@ -392,12 +388,9 @@
     <wire from="(2370,980)" to="(2390,980)"/>
     <wire from="(2390,1070)" to="(2500,1070)"/>
     <wire from="(2390,980)" to="(2390,1070)"/>
-    <wire from="(2390,980)" to="(2430,980)"/>
     <wire from="(2410,930)" to="(2410,940)"/>
     <wire from="(2410,930)" to="(2960,930)"/>
-    <wire from="(2410,940)" to="(2430,940)"/>
-    <wire from="(2430,940)" to="(2440,940)"/>
-    <wire from="(2490,940)" to="(2500,940)"/>
+    <wire from="(2410,940)" to="(2500,940)"/>
     <wire from="(2500,1040)" to="(2500,1050)"/>
     <wire from="(2500,940)" to="(2500,1010)"/>
     <wire from="(2740,1050)" to="(2740,1090)"/>
