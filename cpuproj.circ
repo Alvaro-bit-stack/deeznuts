@@ -164,6 +164,9 @@
       <a name="facing" val="south"/>
       <a name="width" val="8"/>
     </comp>
+    <comp lib="2" loc="(770,1060)" name="Multiplexer">
+      <a name="width" val="2"/>
+    </comp>
     <comp lib="2" loc="(890,1100)" name="Decoder">
       <a name="select" val="2"/>
     </comp>
@@ -201,70 +204,70 @@
       <a name="appearance" val="logisim_evolution"/>
       <a name="label" val="PC"/>
     </comp>
-    <comp lib="8" loc="(1096,834)" name="Text">
+    <comp lib="8" loc="(1095,830)" name="Text">
       <a name="text" val="Register File"/>
     </comp>
-    <comp lib="8" loc="(1306,1103)" name="Text">
+    <comp lib="8" loc="(1305,1100)" name="Text">
       <a name="text" val="readreg2"/>
     </comp>
-    <comp lib="8" loc="(1318,889)" name="Text">
+    <comp lib="8" loc="(1315,885)" name="Text">
       <a name="text" val="readreg1"/>
     </comp>
-    <comp lib="8" loc="(1494,1428)" name="Text">
+    <comp lib="8" loc="(1490,1425)" name="Text">
       <a name="text" val="ts wirte for the imm"/>
     </comp>
-    <comp lib="8" loc="(161,710)" name="Text">
+    <comp lib="8" loc="(160,710)" name="Text">
       <a name="text" val="opcode"/>
     </comp>
-    <comp lib="8" loc="(1742,859)" name="Text">
+    <comp lib="8" loc="(1740,855)" name="Text">
       <a name="text" val="ALU"/>
     </comp>
-    <comp lib="8" loc="(2310,1271)" name="Text">
-      <a name="text" val="write enable has to be on to write into memeory"/>
-    </comp>
-    <comp lib="8" loc="(2313,1161)" name="Text">
+    <comp lib="8" loc="(2310,1160)" name="Text">
       <a name="text" val="str wont work because m3 has to be 1 for str to work"/>
     </comp>
-    <comp lib="8" loc="(2593,886)" name="Text">
+    <comp lib="8" loc="(2310,1270)" name="Text">
+      <a name="text" val="write enable has to be on to write into memeory"/>
+    </comp>
+    <comp lib="8" loc="(2590,885)" name="Text">
       <a name="text" val="Data Memory"/>
     </comp>
-    <comp lib="8" loc="(2726,946)" name="Text">
-      <a name="text" val="this will calc the offset right now its just offsetting by 1"/>
-    </comp>
-    <comp lib="8" loc="(273,710)" name="Text">
+    <comp lib="8" loc="(270,710)" name="Text">
       <a name="text" val="1st Reg"/>
     </comp>
-    <comp lib="8" loc="(2832,835)" name="Text">
+    <comp lib="8" loc="(2725,945)" name="Text">
+      <a name="text" val="this will calc the offset right now its just offsetting by 1"/>
+    </comp>
+    <comp lib="8" loc="(2830,835)" name="Text">
       <a name="text" val="have to choose when to use the aluout vs the stuff from the memory in the case of add it should just skip the memeory "/>
     </comp>
-    <comp lib="8" loc="(355,1374)" name="Text">
+    <comp lib="8" loc="(355,1370)" name="Text">
       <a name="text" val="ADD:11 LDR 01 STR 10 SUB 00"/>
     </comp>
-    <comp lib="8" loc="(411,1296)" name="Text">
+    <comp lib="8" loc="(410,1295)" name="Text">
       <a name="text" val="to choose immediate"/>
     </comp>
-    <comp lib="8" loc="(418,1092)" name="Text">
-      <a name="text" val="Reg1"/>
-    </comp>
-    <comp lib="8" loc="(419,1008)" name="Text">
+    <comp lib="8" loc="(415,1005)" name="Text">
       <a name="text" val="Reg 2"/>
     </comp>
-    <comp lib="8" loc="(421,710)" name="Text">
+    <comp lib="8" loc="(415,1090)" name="Text">
+      <a name="text" val="Reg1"/>
+    </comp>
+    <comp lib="8" loc="(420,710)" name="Text">
       <a name="text" val="2nd Reg or Target"/>
     </comp>
-    <comp lib="8" loc="(599,713)" name="Text">
+    <comp lib="8" loc="(595,710)" name="Text">
       <a name="text" val="3rd reg or dest reg"/>
     </comp>
-    <comp lib="8" loc="(635,998)" name="Text">
+    <comp lib="8" loc="(635,995)" name="Text">
       <a name="text" val="if its immidate"/>
     </comp>
-    <comp lib="8" loc="(748,1190)" name="Text">
+    <comp lib="8" loc="(745,1190)" name="Text">
       <a name="text" val="writeenable"/>
     </comp>
     <comp lib="8" loc="(775,1000)" name="Text">
       <a name="text" val="if its desreg"/>
     </comp>
-    <comp lib="8" loc="(924,1294)" name="Text">
+    <comp lib="8" loc="(920,1290)" name="Text">
       <a name="text" val="to choose if Write enable should be on for memory"/>
     </comp>
     <wire from="(0,1000)" to="(0,1090)"/>
@@ -435,6 +438,7 @@
     <wire from="(520,1400)" to="(520,1420)"/>
     <wire from="(520,1420)" to="(530,1420)"/>
     <wire from="(520,990)" to="(520,1010)"/>
+    <wire from="(530,1070)" to="(740,1070)"/>
     <wire from="(530,1150)" to="(530,1300)"/>
     <wire from="(530,1150)" to="(650,1150)"/>
     <wire from="(530,790)" to="(1400,790)"/>
@@ -449,20 +453,27 @@
     <wire from="(590,1190)" to="(600,1190)"/>
     <wire from="(590,1310)" to="(890,1310)"/>
     <wire from="(590,1320)" to="(590,1390)"/>
+    <wire from="(590,1320)" to="(620,1320)"/>
     <wire from="(590,1390)" to="(840,1390)"/>
+    <wire from="(620,1090)" to="(620,1320)"/>
+    <wire from="(620,1090)" to="(750,1090)"/>
     <wire from="(630,1190)" to="(650,1190)"/>
     <wire from="(670,1380)" to="(1390,1380)"/>
     <wire from="(670,920)" to="(670,1380)"/>
-    <wire from="(670,920)" to="(750,920)"/>
+    <wire from="(670,920)" to="(710,920)"/>
     <wire from="(70,840)" to="(80,840)"/>
     <wire from="(700,1170)" to="(710,1170)"/>
+    <wire from="(710,1050)" to="(740,1050)"/>
     <wire from="(710,1160)" to="(710,1170)"/>
     <wire from="(710,1160)" to="(880,1160)"/>
-    <wire from="(750,1150)" to="(890,1150)"/>
-    <wire from="(750,920)" to="(750,1150)"/>
+    <wire from="(710,920)" to="(710,1050)"/>
+    <wire from="(750,1080)" to="(750,1090)"/>
+    <wire from="(770,1060)" to="(800,1060)"/>
     <wire from="(80,800)" to="(80,840)"/>
     <wire from="(80,840)" to="(80,870)"/>
     <wire from="(80,870)" to="(810,870)"/>
+    <wire from="(800,1060)" to="(800,1120)"/>
+    <wire from="(800,1120)" to="(890,1120)"/>
     <wire from="(800,1240)" to="(1040,1240)"/>
     <wire from="(800,1240)" to="(800,1510)"/>
     <wire from="(800,1510)" to="(2910,1510)"/>
@@ -477,7 +488,7 @@
     <wire from="(870,1480)" to="(910,1480)"/>
     <wire from="(880,1160)" to="(880,1200)"/>
     <wire from="(880,1200)" to="(950,1200)"/>
-    <wire from="(890,1100)" to="(890,1150)"/>
+    <wire from="(890,1100)" to="(890,1120)"/>
     <wire from="(910,1060)" to="(920,1060)"/>
     <wire from="(910,1070)" to="(930,1070)"/>
     <wire from="(910,1080)" to="(940,1080)"/>

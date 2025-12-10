@@ -1,21 +1,19 @@
 imapping = {
-    "SUBBY":0b00000000,
-    "LDUR":0b01000000,
-    "STUR": 0b10000000,
-    "ADDY":0b11000000,
-    "X0":[0b00000000,0b00000000,0b00000000],
-    "X1" :[0b00010000,0b00000100, 0b00000001],
-    "X2":[0b00100000,0b00001000,0b00000010],
-    "X3":[0b00110000,0b00001100,0b00000011]}
+    "SUBBY":0b00000000000000,
+    "LDUR":0b01000000000000,
+    "STUR": 0b10000000000000,
+    "ADDY":0b11000000000000,
+    "X0":[0b00000000000000,0b00000000000000,0b00000000000000],
+    "X1" :[0b00010000000000,0b00000100000000, 0b00000001000000],
+    "X2":[0b00100000000000,0b00001000000000,0b00000010000000]}
 
 def decoder(instruction):
-    machinecode = 0b00000000
+    machinecode = 0b00000000000000
     position = -1
     instruction = instruction.split(" ")
-    instruction = [x for x in instruction if x != " "]
     for part in instruction:
         if part not in imapping:
-            machinecode |= int(format(int(part,2),"08b"),2)
+            machinecode |= int(format(int(part),"014b"))
             continue
         if position >= 0:
             machinecode |= imapping[part][position]
