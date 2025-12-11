@@ -52,7 +52,7 @@ except FileNotFoundError:
         for line in file:
             instruction = line.strip()
             instructions.append(instruction)
-
+    
 
 decoding(instructions)
 print("done")
