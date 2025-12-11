@@ -191,56 +191,64 @@
     <comp lib="4" loc="(110,1020)" name="RAM">
       <a name="appearance" val="logisim_evolution"/>
       <a name="enables" val="line"/>
+      <a name="label" val="InstructionFetching"/>
+      <a name="labelvisible" val="true"/>
     </comp>
     <comp lib="4" loc="(2500,1000)" name="RAM">
       <a name="appearance" val="logisim_evolution"/>
       <a name="enables" val="line"/>
+      <a name="label" val="Memory"/>
+      <a name="labelvisible" val="true"/>
     </comp>
     <comp lib="4" loc="(40,930)" name="Register">
       <a name="appearance" val="logisim_evolution"/>
       <a name="label" val="PC"/>
     </comp>
-    <comp lib="8" loc="(1095,830)" name="Text">
+    <comp lib="8" loc="(1044,1288)" name="Text">
+      <a name="text" val="turns write enable on/off depending on LDUR(01) or STUR(10)"/>
+    </comp>
+    <comp lib="8" loc="(1106,834)" name="Text">
       <a name="text" val="Register File"/>
     </comp>
     <comp lib="8" loc="(1305,1100)" name="Text">
-      <a name="text" val="readreg2"/>
+      <a name="text" val="ReadReg2"/>
     </comp>
-    <comp lib="8" loc="(1315,885)" name="Text">
-      <a name="text" val="readreg1"/>
+    <comp lib="8" loc="(1340,890)" name="Text">
+      <a name="text" val="ReadReg1"/>
     </comp>
-    <comp lib="8" loc="(1490,1425)" name="Text">
-      <a name="text" val="ts wirte for the imm"/>
+    <comp lib="8" loc="(1548,1350)" name="Text">
+      <a name="font" val="SansSerif bold 10"/>
+      <a name="text" val="pading 0's so 2 bit imm can be 8 bit"/>
     </comp>
-    <comp lib="8" loc="(160,710)" name="Text">
-      <a name="text" val="opcode"/>
+    <comp lib="8" loc="(1720,886)" name="Text">
+      <a name="text" val="Chooses between Reg1Data or Imm"/>
     </comp>
-    <comp lib="8" loc="(1740,855)" name="Text">
+    <comp lib="8" loc="(1726,982)" name="Text">
       <a name="text" val="ALU"/>
     </comp>
-    <comp lib="8" loc="(2310,1160)" name="Text">
-      <a name="text" val="str wont work because m3 has to be 1 for str to work"/>
+    <comp lib="8" loc="(1795,1083)" name="Text">
+      <a name="font" val="SansSerif bold 10"/>
+      <a name="text" val="&lt;- Choose immediate if LDUR or STUR"/>
     </comp>
-    <comp lib="8" loc="(2310,1270)" name="Text">
-      <a name="text" val="write enable has to be on to write into memeory"/>
+    <comp lib="8" loc="(1953,944)" name="Text">
+      <a name="text" val="Chooses between ADD/SUB"/>
     </comp>
-    <comp lib="8" loc="(2590,885)" name="Text">
-      <a name="text" val="Data Memory"/>
+    <comp lib="8" loc="(256,1402)" name="Text">
+      <a name="font" val="SansSerif bold 10"/>
+      <a name="text" val="if its 00 then the output is 0 otherwise its 1 which allows to choose between ADD or SUB in ALU -&gt;"/>
     </comp>
-    <comp lib="8" loc="(270,710)" name="Text">
-      <a name="text" val="1st Reg"/>
+    <comp lib="8" loc="(3159,1239)" name="Text">
+      <a name="text" val="Chooses between the data read in the memory or the ALUout"/>
     </comp>
-    <comp lib="8" loc="(2725,945)" name="Text">
-      <a name="text" val="this will calc the offset right now its just offsetting by 1"/>
+    <comp lib="8" loc="(338,1325)" name="Text">
+      <a name="font" val="SansSerif bold 10"/>
+      <a name="text" val="if 01 or 10 then the output is 1 which allows to choose the imm -&gt;"/>
     </comp>
-    <comp lib="8" loc="(2830,835)" name="Text">
-      <a name="text" val="have to choose when to use the aluout vs the stuff from the memory in the case of add it should just skip the memeory "/>
+    <comp lib="8" loc="(396,928)" name="Text">
+      <a name="text" val="imm/destreg"/>
     </comp>
-    <comp lib="8" loc="(355,1370)" name="Text">
-      <a name="text" val="ADD:11 LDR 01 STR 10 SUB 00"/>
-    </comp>
-    <comp lib="8" loc="(410,1295)" name="Text">
-      <a name="text" val="to choose immediate"/>
+    <comp lib="8" loc="(407,1171)" name="Text">
+      <a name="text" val="Opcode"/>
     </comp>
     <comp lib="8" loc="(415,1005)" name="Text">
       <a name="text" val="Reg 2"/>
@@ -248,23 +256,13 @@
     <comp lib="8" loc="(415,1090)" name="Text">
       <a name="text" val="Reg1"/>
     </comp>
-    <comp lib="8" loc="(420,710)" name="Text">
-      <a name="text" val="2nd Reg or Target"/>
+    <comp lib="8" loc="(783,1213)" name="Text">
+      <a name="font" val="SansSerif bold 12"/>
+      <a name="text" val="writeenable (only on for LDUR/ADD/SUB)"/>
     </comp>
-    <comp lib="8" loc="(595,710)" name="Text">
-      <a name="text" val="3rd reg or dest reg"/>
-    </comp>
-    <comp lib="8" loc="(635,995)" name="Text">
-      <a name="text" val="if its immidate"/>
-    </comp>
-    <comp lib="8" loc="(745,1190)" name="Text">
-      <a name="text" val="writeenable"/>
-    </comp>
-    <comp lib="8" loc="(775,1000)" name="Text">
-      <a name="text" val="if its desreg"/>
-    </comp>
-    <comp lib="8" loc="(920,1290)" name="Text">
-      <a name="text" val="to choose if Write enable should be on for memory"/>
+    <comp lib="8" loc="(808,1030)" name="Text">
+      <a name="font" val="SansSerif bold 11"/>
+      <a name="text" val="Chooses WriteReg based off Opcode"/>
     </comp>
     <wire from="(0,1000)" to="(0,1090)"/>
     <wire from="(0,1000)" to="(40,1000)"/>

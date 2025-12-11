@@ -1,3 +1,5 @@
+#Alvaro Izquierdo
+#I pledge my honor that I have abided by the Stevens Honor System
 imapping = {
     "SUBBY":0b00000000,
     "LDUR":0b01000000,
