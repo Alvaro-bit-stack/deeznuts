@@ -233,6 +233,9 @@
     <comp lib="8" loc="(1953,944)" name="Text">
       <a name="text" val="Chooses between ADD/SUB"/>
     </comp>
+    <comp lib="8" loc="(230,543)" name="Text">
+      <a name="text" val="Alvaro Izquierdo "/>
+    </comp>
     <comp lib="8" loc="(256,1402)" name="Text">
       <a name="font" val="SansSerif bold 10"/>
       <a name="text" val="if its 00 then the output is 0 otherwise its 1 which allows to choose between ADD or SUB in ALU -&gt;"/>
@@ -247,6 +250,9 @@
     <comp lib="8" loc="(396,928)" name="Text">
       <a name="text" val="imm/destreg"/>
     </comp>
+    <comp lib="8" loc="(398,511)" name="Text">
+      <a name="text" val="I pledge my honor that I have abided by the Stevens Honor System"/>
+    </comp>
     <comp lib="8" loc="(407,1171)" name="Text">
       <a name="text" val="Opcode"/>
     </comp>
@@ -255,6 +261,9 @@
     </comp>
     <comp lib="8" loc="(415,1090)" name="Text">
       <a name="text" val="Reg1"/>
+    </comp>
+    <comp lib="8" loc="(420,544)" name="Text">
+      <a name="text" val="Adithya Ganesh"/>
     </comp>
     <comp lib="8" loc="(783,1213)" name="Text">
       <a name="font" val="SansSerif bold 12"/>
