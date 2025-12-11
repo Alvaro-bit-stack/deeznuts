@@ -42,11 +42,17 @@ def decoding(instructions):
                 
 
 instructions = []       
+try:
+    with open("program.s","r") as file:
+        for line in file:
+            instruction = line.strip()
+            instructions.append(instruction)
+except FileNotFoundError:
+    with open("program.txt","r") as file:
+        for line in file:
+            instruction = line.strip()
+            instructions.append(instruction)
 
-with open("program.txt","r") as file:
-    for line in file:
-        instruction = line.strip()
-        instructions.append(instruction)
 
 decoding(instructions)
 print("done")
